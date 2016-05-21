@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 0.0.12 (2016-05-21)
+- Definitive fix style in pypi
+
 ## 0.0.11 (2016-05-21)
 - Prevent exception for fleets not content players 
 
