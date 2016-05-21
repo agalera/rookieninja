@@ -3,7 +3,6 @@
 
 import os
 import sys
-from glob import glob
 try:
     from pypandoc import convert
     read_md = lambda f: convert(f, 'rst')
@@ -22,26 +21,25 @@ if sys.argv[-1] == 'publish':
     os.system('python setup.py sdist upload')
     sys.exit()
 
-readme = read_md('README.md')
-changelog = read_md('CHANGELOG.md')
+
+try:
+    readme = read_md('README.md')
+except:
+    readme = ""
+try:
+    changelog = read_md('CHANGELOG.md')
+except:
+    changelog = ""
 
 setup(
     name='rookieninja',
-    version='0.0.3',
-    description='',
+    version='0.0.10',
+    description='Displays information about your fellow fleet',
     long_description=readme + '\n\n' + changelog,
     author='Alberto Galera Jimenez',
     author_email='galerajimenez@gmail.com',
     url='https://github.com/kianxineki/rookieninja',
-    # packages=['rookieninja', 'rookieninja.models', 'rookieninja.modules',
-    #           'rookieninja.routines', 'rookieninja.scripts',
-    #           'rookieninja.views'],
     packages=find_packages(),
-    data_files=[('', glob('*.md')),
-                ('static', glob('static/*.???')),
-                ('static/imgs', glob('static/imgs/*.???')),
-                ('static/templates', glob('static/templates/*.???')),
-                ],
     include_package_data=True,
     install_requires=['pymongo', 'requests', 'bottle', 'jinja2', 'meinheld'],
     license="GPL",

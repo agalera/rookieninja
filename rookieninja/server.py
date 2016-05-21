@@ -7,6 +7,8 @@ from rookieninja.modules.db import Mongo
 # TODO: change to settings
 from rookieninja.routines import *
 
+# Realpath
+
 
 @hook('after_request')
 def set_headers():
@@ -20,7 +22,7 @@ def set_headers():
 
 @get('/static/<path:path>')  # prefer nginx
 def static(path):
-    return static_file(path, root='./static')
+    return static_file(path, root='%s/static' % settings.glob['realpath'])
 
 
 @get('/robots.txt')
