@@ -27,7 +27,7 @@ changelog = read_md('CHANGELOG.md')
 
 setup(
     name='rookieninja',
-    version='0.0.1',
+    version='0.0.2',
     description='',
     long_description=readme + '\n\n' + changelog,
     author='Alberto Galera Jimenez',
