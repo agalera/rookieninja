@@ -13,6 +13,11 @@ def loop():
                 if t > int(fleets[key_fleet]['last_update']) + timeout:
                     remove_fleets.append(key_fleet)
                     continue
+
+                if "players" not in fleets[key_fleet]:
+                    remove_fleets.append(key_fleet)
+                    continue
+
                 remove_players = []
                 for key_player in fleets[key_fleet]['players']:
                     if t > int(fleets[key_fleet]['players'][key_player]['last_update']) + timeout:

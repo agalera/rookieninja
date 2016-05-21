@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 0.0.11 (2016-05-21)
+- Prevent exception for fleets not content players 
+
 ## 0.0.10 (2016-05-21)
 - if the configuration file does not exist returns a human error
 - Try again pypi ... 

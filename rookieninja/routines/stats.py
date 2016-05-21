@@ -11,7 +11,7 @@ def loop():
         sleep(30)
         result = {'fleets': len(fleets), 'players': 0}
         for key_fleet in fleets:
-            result['players'] += len(fleets[key_fleet]['players'])
+            result['players'] += len(fleets[key_fleet].get('players', []))
         Mongo.stats_eve.update({'_id': int(argv[1])}, result, True)
         sleep(timeout - 30)
 
