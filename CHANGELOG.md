@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 0.1.1 (2016-05-21)
+- add support absolute path config
+
 ## 0.1.0 (2016-05-21)
 - remove duplicate code
 

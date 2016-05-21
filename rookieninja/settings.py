@@ -10,7 +10,11 @@ if len(argv) < 3:
 
 print os.path.join(os.getcwd(), argv[2])
 try:
-    m = imp.load_source("*", os.path.join(os.getcwd(), argv[2]))
+    if argv[2][:1] == "/":
+        path = argv[2]
+    else:
+        path = os.path.join(os.getcwd(), argv[2])
+    m = imp.load_source("*", path)
 except:
     print "file config not found"
     exit()
