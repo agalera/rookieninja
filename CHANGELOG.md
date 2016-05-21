@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 0.1.0 (2016-05-21)
+- remove duplicate code
+
 ## 0.0.12 (2016-05-21)
 - Definitive fix style in pypi
 

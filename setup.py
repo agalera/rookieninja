@@ -33,7 +33,7 @@ except:
 
 setup(
     name='rookieninja',
-    version='0.0.12',
+    version='0.1.0',
     description='Displays information about your fellow fleet',
     long_description=readme + '\n\n' + changelog,
     author='Alberto Galera Jimenez',
