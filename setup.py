@@ -27,7 +27,7 @@ changelog = read_md('CHANGELOG.md')
 
 setup(
     name='rookieninja',
-    version='0.0.2',
+    version='0.0.3',
     description='',
     long_description=readme + '\n\n' + changelog,
     author='Alberto Galera Jimenez',
@@ -43,7 +43,7 @@ setup(
                 ('static/templates', glob('static/templates/*.???')),
                 ],
     include_package_data=True,
-    install_requires=['requests', 'bottle', 'jinja2', 'meinheld'],
+    install_requires=['pymongo', 'requests', 'bottle', 'jinja2', 'meinheld'],
     license="GPL",
     zip_safe=False,
     keywords='rookieninja, eve, online',
