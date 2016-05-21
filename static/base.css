@@ -1,0 +1,193 @@
+body{
+    background-color: #151515;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    margin-bottom: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 124%;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.info{
+    position: relative;
+    float: none;
+    width: 100%;
+    z-index: 9;
+    background-color: #000;
+    color: #EEE;
+    top: 0px;
+    margin-bottom: 8px;
+    min-height: 32px;
+}
+.invite {
+    position: absolute;
+    bottom: 0px;
+    left: 38px;
+}
+.info > .info2{
+    float: left;
+    margin-top: 4px;
+    margin-left: 10px;
+}
+.info img{
+    margin-top: -2px;
+    height: 20px;
+}
+.info a{
+    color: #CCC;
+}
+.info a:hover{
+    color: #FFF;
+}
+.content-kill{
+    position: absolute;
+    z-index: 8;
+}
+.kill{
+    position: relative;
+    border: 1px solid #666;
+    width: 310px;
+    float: left;
+    background-color: #AAA;
+    overflow: hidden;
+}
+.kill:nth-of-type(odd){
+    background-color: #BBB;
+}
+.adapt_kill{
+    width: 280px;
+    height: 64px;
+}
+.adapt_fleet{
+    width: 312px;
+}
+.kill_right{
+    margin-left: 4px;
+    float: left;
+    overflow: hidden;
+    max-width: 148px;
+}
+#fleet{
+    position: absolute;
+    margin-top: 00px;
+    /*padding-left: 320px;*/
+}
+.zkilldown{
+    position: relative;
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+    background-color: #AAA;
+}
+.trusted{
+    position: relative;
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+    background-color: #AAA;
+    margin-bottom: 10px;
+}
+.ship {
+    float: left;
+    width: 128px;
+}
+.value {
+    max-width: 180px;
+    height: 16px;
+    overflow: hidden;
+    clear: both;
+}
+.attackers {
+    clear: both;
+}
+
+.clear_both{
+    clear: both;
+}
+.nameship{
+    position: absolute;
+    bottom: 1px;
+    left: 66px;
+    font-size: 10px;
+    color: #FFF;
+}
+.total_players {
+    position: absolute;
+    right: 10px;
+    top: 6px;
+}
+.content{
+    position: relative;
+    width: 100%;
+
+}
+.imagenportada{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: #999;
+    background-image: url('http://updates.eveonline.com/kvd74o0q2fjg/5uEE2ASdQAOyQaCc06cciI/720b456f1a6cc2ed1d43b711a9f56315/1920x1080b412.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contentimages{
+    position: relative;
+    margin:0 auto;
+    min-width: 800px;
+    max-width: 80%;
+}
+.textoportada{
+    position: absolute;
+    top: 34px;
+    color: #FFF;
+    z-index: 9;
+}
+.textoportada h1{
+    font-size: 60px;
+}
+.screenshot{
+    position: absolute;
+    top: 70px;
+    right: 0px;
+}
+.icon{
+    position: relative;
+    float: left;
+    height: 16px;
+    width: 16px;
+    background-size: 100%;
+    margin-right: 4px;
+}
+.name{
+    background-image: url('/static/imgs/name.png');
+}
+.location{
+    background-image: url('/static/imgs/location.png');
+}
+.dscan{
+    background-image: url('/static/imgs/dscan.png');
+}
+.wh{
+    background-image: url('/static/imgs/wh.png');
+}
+.create_fleet{
+    position: absolute;
+    top: 300px;
+    left: 180px;
+    border: 1px solid #2e6da4;
+    background-color: #337ab7;
+    font-size: 40px;
+    color: #FFF;
+
+    padding: 8px 14px 12px 14px;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 100%;
+}
