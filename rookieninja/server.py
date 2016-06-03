@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 from rookieninja import settings
 from bottle import run, static_file, get, response, hook
-from views import *
+from rookieninja.views import *
 from rookieninja.modules.db import Mongo
 # TODO: change to settings
 from rookieninja.routines import *
