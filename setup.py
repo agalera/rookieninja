@@ -38,7 +38,7 @@ setup(
     long_description=readme + '\n\n' + changelog,
     author='Alberto Galera Jimenez',
     author_email='galerajimenez@gmail.com',
-    url='https://github.com/kianxineki/rookieninja',
+    url='https://github.com/agalera/rookieninja',
     packages=find_packages(),
     include_package_data=True,
     install_requires=['pymongo', 'requests', 'bottle', 'jinja2', 'meinheld'],
